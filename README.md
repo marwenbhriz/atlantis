@@ -46,20 +46,24 @@ curl -X POST \
         "ref": "test-branch",
         "repo": {
           "full_name": "marwenbhriz/atlantis",
-          "clone_url": "https://github.com/marwenbhriz/your-repo.git"
+          "clone_url": "https://github.com/marwenbhriz/atlantis.git"
         }
       },
       "base": {
         "ref": "main",
         "repo": {
-          "full_name": "marwenbhriz/your-repo",
-          "clone_url": "https://github.com/marwenbhriz/your-repo.git"
+          "full_name": "marwenbhriz/atlantis",
+          "clone_url": "https://github.com/marwenbhriz/atlantis.git"
         }
       }
     },
     "repository": {
-      "full_name": "marwenbhriz/your-repo",
-      "clone_url": "https://github.com/marwenbhriz/your-repo.git"
+      "full_name": "marwenbhriz/atlantis",
+      "clone_url": "https://github.com/marwenbhriz/atlantis.git"
     }
   }' \
   https://da9c-240f-84-e791-1-4837-e9af-d549-fb42.ngrok-free.app/events
+
+
+
+sss
