@@ -1,0 +1,15 @@
+version: '3'
+services:
+  atlantis:
+    image: runatlantis/atlantis:latest
+    container_name: atlantis
+    volumes:
+      - $HOME/.atlantis:/home/atlantis/.atlantis
+    ports:
+      - 4141:4141
+    environment:
+      - ATLANTIS_GH_USER=marwenbhriz
+      - ATLANTIS_GH_TOKEN=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
+      - ATLANTIS_GH_WEBHOOK_SECRET=a27483315399ab0e5d014c3bd2501282
+      - ATLANTIS_REPO_ALLOWLIST=github.com/marwenbhriz/*
+      - ATLANTIS_PORT=4141
