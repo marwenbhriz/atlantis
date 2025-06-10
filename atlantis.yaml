@@ -1,0 +1,14 @@
+version: 3
+projects:
+- name: terraform-hello
+: default
+workfl  dir: .
+  workflowows:
+  default:
+    plan:
+      steps:
+      - init
+      - plan
+    apply:
+      steps:
+      - apply
