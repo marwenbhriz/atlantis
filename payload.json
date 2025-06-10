@@ -1,0 +1,26 @@
+{
+  "action": "opened",
+  "number": 1,
+  "pull_request": {
+    "number": 1,
+    "head": {
+      "sha": "abc123",
+      "ref": "test-branch",
+      "repo": {
+        "full_name": "marwenbhriz/atlantis",
+        "clone_url": "https://github.com/marwenbhriz/atlantis.git"
+      }
+    },
+    "base": {
+      "ref": "main",
+      "repo": {
+        "full_name": "marwenbhriz/atlantis",
+        "clone_url": "https://github.com/marwenbhriz/atlantis.git"
+      }
+    }
+  },
+  "repository": {
+    "full_name": "marwenbhriz/atlantis",
+    "clone_url": "https://github.com/marwenbhriz/atlantis.git"
+  }
+}

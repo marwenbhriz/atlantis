@@ -23,3 +23,43 @@ Forwarding                    https://0bbf-175-129-140-78.ngrok-free.app -> http
 
 
 new test
+
+
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "X-GitHub-Event: pull_request" \
+  -d '{"action": "opened", "pull_request": {"number": 1}}' \
+  https://da9c-240f-84-e791-1-4837-e9af-d549-fb42.ngrok-free.app
+
+
+
+  curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "X-GitHub-Event: pull_request" \
+  -d '{
+    "action": "opened",
+    "number": 1,
+    "pull_request": {
+      "number": 1,
+      "head": {
+        "sha": "abc123",
+        "ref": "test-branch",
+        "repo": {
+          "full_name": "marwenbhriz/atlantis",
+          "clone_url": "https://github.com/marwenbhriz/your-repo.git"
+        }
+      },
+      "base": {
+        "ref": "main",
+        "repo": {
+          "full_name": "marwenbhriz/your-repo",
+          "clone_url": "https://github.com/marwenbhriz/your-repo.git"
+        }
+      }
+    },
+    "repository": {
+      "full_name": "marwenbhriz/your-repo",
+      "clone_url": "https://github.com/marwenbhriz/your-repo.git"
+    }
+  }' \
+  https://da9c-240f-84-e791-1-4837-e9af-d549-fb42.ngrok-free.app/events
